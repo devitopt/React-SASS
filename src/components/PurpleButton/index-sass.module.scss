@@ -1,0 +1,22 @@
+.purpleButton {
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 16px 8px 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    background-color: #5C00DC;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.purpleButton:hover {
+    background-color: #9346fe;
+}
+
+.purpleButton:active {
+    background-color: #5C00DC;
+}
