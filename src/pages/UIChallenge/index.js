@@ -109,7 +109,7 @@ const UIChallenge = () => {
               svg={returnLogo}
               title="Attendee Registration"
               content="Start by creating a general registration workflow"
-              width="31%"
+              width="31.5%"
               padding="24px 32px 24px 32px"
               border="solid 1px #CCCCCC"
             />
@@ -117,7 +117,7 @@ const UIChallenge = () => {
           <ContentBox
             svg={plusLogo}
             content="Add Registration Workflow"
-            width="31%"
+            width="31.5%"
             padding="24px 32px 24px 32px"
             border="solid 1px #CCCCCC"
           />
@@ -148,6 +148,7 @@ const UIChallenge = () => {
                 title={step4Data[index].title}
                 content={step4Data[index].content}
                 padding="24px 32px 24px 32px"
+                width="47.775%"
                 border="solid 1px #CCCCCC"
                 color="white"
               />
@@ -160,6 +161,7 @@ const UIChallenge = () => {
                 title={step4Data[index].title}
                 content={step4Data[index].content}
                 padding="24px 32px 24px 32px"
+                width="31%"
                 border="solid 1px #CCCCCC"
                 color="white"
               />

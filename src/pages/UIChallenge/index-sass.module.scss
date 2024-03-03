@@ -97,6 +97,7 @@
 				border: solid 1px #CCCCCC;
 				padding: 16px 24px 16px 24px;
 				display: flex;
+				flex-wrap: wrap;
 				gap: 32px;
 			}
 
@@ -105,9 +106,9 @@
 				padding: 0;
 				display: flex;
 				flex-wrap: wrap;
-				justify-content: space-between;
+				// justify-content: space-between;
 				row-gap: 24px;
-				// gap: 32px;
+				column-gap: 2.75%;
 			}
 
 			.contentBar4 {
@@ -120,13 +121,69 @@
 
 				.contentBarLine {
 					display: flex;
-					gap: 24px
+					flex-wrap: wrap;
+					gap: 2.75%;
+					row-gap: 24px;
 				}
 			}
 		}
 
 		.stepBar4 {
 			margin-top: 40px;
+		}
+	}
+}
+
+@media screen and (max-width: 612px) {
+	.container {
+
+		.logoBar {
+			flex-direction: column;
+			row-gap: 16px;
+
+			button {
+				align-self: flex-end;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.container {
+
+		.settingsBar {
+
+			.stepBar {
+
+				.contentBar4 {
+					padding: 40px 10px 40px 10px;
+					width: 278px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.container {
+
+		padding: 40px 10px 40px 10px;
+	}
+}
+
+@media screen and (max-width: 361px) {
+	.container {
+
+		.logoBar {
+
+			.info {
+				flex-direction: column;
+				row-gap: 16px;
+
+				img {
+					max-width: 178px;
+				}
+			}
 		}
 	}
 }
