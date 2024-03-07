@@ -13,7 +13,7 @@ const ContentBox = ({ svg, title, content, width, padding, border, color }) => {
       className={styles.box}
       style={{
         padding,
-        width,
+        // width,
         border,
         color,
         alignItems: title ? null : "center",

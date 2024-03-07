@@ -90,6 +90,10 @@
 				margin: 0 0 8px 0;
 			}
 
+			.contentBox3 {
+				width: 31%;
+			}
+
 			.contentBar1 {
 				width: 100%;
 				box-sizing: border-box;
@@ -99,6 +103,10 @@
 				display: flex;
 				flex-wrap: wrap;
 				gap: 32px;
+
+				.contentBox1 {
+					width: 21%;
+				}
 			}
 
 			.contentBar2 {
@@ -109,6 +117,11 @@
 				// justify-content: space-between;
 				row-gap: 24px;
 				column-gap: 2.75%;
+
+				.contentBox2 {
+					width: 31.5%;
+					height: 100%;
+				}
 			}
 
 			.contentBar4 {
@@ -125,6 +138,14 @@
 					gap: 2.75%;
 					row-gap: 24px;
 				}
+
+				.contentBox41 {
+					width: 47.775%;
+				}
+
+				.contentBox42 {
+					width: 31%;
+				}
 			}
 		}
 
@@ -134,7 +155,35 @@
 	}
 }
 
-@media screen and (max-width: 612px) {
+@media screen and (max-width: 1024px) {
+	.container {
+		.settingsBar {
+			.stepBar {
+				.contentBar1 {
+					.contentBox1 {
+						width: 29%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.container {
+		.settingsBar {
+			.stepBar {
+				.contentBar4 {
+					.contentBox42 {
+						width: 47.775%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 656px) {
 	.container {
 
 		.logoBar {
@@ -145,20 +194,68 @@
 				align-self: flex-end;
 			}
 		}
+
+		.settingsBar {
+			.stepBar {
+				.contentBar1 {
+					.contentBox1 {
+						width: 45%;
+					}
+				}
+
+				.contentBar2 {
+					column-gap: 4%;
+
+					.contentBox2 {
+						width: 48%;
+					}
+				}
+
+				.contentBox3 {
+					width: 48%;
+				}
+
+				.contentBar4 {
+					.contentBox41 {
+						width: 100%;
+					}
+
+					.contentBox42 {
+						width: 100%;
+					}
+				}
+			}
+		}
 	}
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 484px) {
 	.container {
 
 		.settingsBar {
 
 			.stepBar {
 
-				.contentBar4 {
-					padding: 40px 10px 40px 10px;
-					width: 278px;
+				.contentBar1 {
+					.contentBox1 {
+						width: 100%;
+					}
 				}
+
+				.contentBar2 {
+					.contentBox2 {
+						width: 100%;
+					}
+				}
+
+				.contentBox3 {
+					width: 100%;
+				}
+
+				// .contentBar4 {
+				// 	padding: 40px 10px 40px 10px;
+				// 	width: 278px;
+				// }
 			}
 		}
 	}
